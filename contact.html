@@ -1,0 +1,93 @@
+<style >
+
+    *{
+     box-sizing: border-box;
+   }
+   
+ 
+   
+   input[type=text], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+   }
+   
+   input[type=submit] {
+     background-color: #04AA6D;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     cursor: pointer;
+   }
+   
+   input[type=submit]:hover {
+     background-color: #45a049;
+   }
+   
+ 
+   .container {
+     border-radius: 5px;
+     background-color: #f2f2f2;
+     padding: 10px;
+   }
+   
+   .column {
+     float: left;
+     width: 50%;
+     margin-top: 6px;
+     padding: 20px;
+     align-items: center;
+   }
+   
+  
+   .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   
+   
+   
+   @media screen and (max-width: 600px) {
+     .column, input[type=submit] {
+       width: 100%;
+       margin-top: 0; 
+     }
+   }
+   </style>
+   <div class="container">
+     <div style="text-align:center">
+       <h1>CONTACT US</h1><hr>
+       
+     </div>
+     <div class="row">
+       <div class="column">
+          
+         <p style="float: left;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.6897393983418!2d4.894391699999999!3d52.37604559999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c7c077cabf%3A0x455411d8e679df3e!2sInntel%20Hotels%20Amsterdam%20Centre!5e0!3m2!1sen!2sin!4v1688680920788!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+       </div>
+       <div class="column">
+         <form action="/action_page.php">
+           <label for="fname">First Name</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+           <label for="lname">Last Name</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+           <label for="country">Country</label>
+           <select id="country" name="country">
+            <option selected value="" disabled></option>
+            <option value="1">Russia</option>
+            <option value="2">Germany</option>
+            <option value="3">France</option>
+            <option value="4">Armenia</option>
+            <option value="5">USA</option>
+            <option value="6">Others</option>
+           </select>
+           <label for="subject">Subject</label>
+           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit"> 
+         </form>
+       </div>
+     </div>
+   </div>
